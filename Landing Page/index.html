@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="application that offers Home and cars maintenance to help people to find someone to repair their
+    houses and cars and help the craftsmen by giving him opportunities to work in this application"
+    />
+    
+    <meta name="Keywords" content="fix ,home maintenance, FIXY " />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FIXY</title>
+    <link rel="shortcut icon" href="./Images/logoLarge.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="Navbar flex">
+      <nav class="flex">
+        <figure class="logo">
+          <img src="./Images/logo.png" alt="Logo" />
+        </figure>
+        <ul class="flex align-center normal_mnue">
+          <li><a href="#About">About Us</a></li>
+          <li><a href="#Services">Our Services</a></li>
+          <li><a href="#why_us">Why Us</a></li>
+          <li><a href="#contact">contact us</a></li>
+        </ul>
+        <ul class="flex align-center nav_burger" id="menu">
+          <li><a href="#About">About Us</a></li>
+          <li><a href="#Services">Our Services</a></li>
+          <li><a href="#why_us">Why Us</a></li>
+          <li><a href="#contact">contact us</a></li>
+        </ul>
+      </nav>
+      <div class="Burger-menu"><i class="fa fa-bars fa-3x" style="color: #D6A649; padding: 10px"></i></div>
+    </header>
+    <section class="Hero flex flex-wrap">
+      <figure>
+        <img src="./Images/MobileApp.png" alt="Mobile M" height="700px" class="mobile_imag" />
+      </figure>
+      <section class="flex flex-col app_section">
+        <h1 class="text-center">Download The App</h1>
+        <div>
+          <button class="app_button flex">
+            <figure>
+              <img src="./Images/Googleplay.png" width="70px" alt="google Play logo" />
+            </figure>
+            <div class="app_text">
+              <p>
+                GET IT ON <br />
+                <span class="app_text">Google Play</span>
+              </p>
+            </div>
+          </button>
+          <button class="app_button flex">
+            <figure>
+              <img src="./Images/AppleLogo.png" width="70px" alt="apple store logo" />
+            </figure>
+            <div class="app_text">
+              <p>
+                GET IT ON <br />
+                <span class="app_text">Google Play</span>
+              </p>
+            </div>
+          </button>
+        </div>
+      </section>
+    </section>
+    <!-- About Section  -->
+    <section id="About" class="flex flex-col about_Fixy">
+      <div>
+        <h1 class="text-center">About MK</h1>
+      </div>
+      <section class="flex justify-around align-center flex-wrap">
+        <article>
+          MK Store is one of the chief precious stone adornments
+            producers. Serving more than 5000 clients crosswise over the USA,
+            UK, Latin America, Australia, and Canada.By owning all parts of the
+            store network, including precious stone sourcing, cutting,
+            combination, and gems fabricating.MK Store is resolved to
+            give the most ideal incentive to Jewelers all through the world. We
+            will probably enable the autonomous gem dealer to remain in front of
+            their
+        </article>
+        <figure>
+          <img src="./Images/logoLarge.png" alt="Logo" />
+        </figure>
+      </section>
+    </section>
+ 
+    <section id="Collection" class="Collection flex flex-col text-center">
+      <h1>Collection</h1>
+      <section>
+        <div><img src="Images/NECKLACE.png" alt="NECKLACE"><h3>Necklace</h3></div>
+        <div><img src="Images/Earrings.png" alt="Earrings"><h3>Earrings</h3></div>
+        <div><img src="Images/Rings.png" alt="Rings"><h3>Rings</h3></div>
+        <div><img src="Images/BRACELET.png" alt="BRACELET"><h3>Bracelet</h3></div>
+      </section>
+    </section>
+    <section class="contact_us flex flex-col" id="contact">
+      <div>
+        <h1 class="text-center">Contact Us</h1>
+      </div>
+      <section class="flex justify-around flex-wrap">
+        <section class="flex flex-col align-center">
+          <div><i class="fa-regular fa-envelope fa-5x contact_icon" style="color: #ffffff"></i></div>
+          <h2>Email</h2>
+          <h2>info@MK.com</h2>
+        </section>
+        <section class="flex flex-col align-center">
+          <div><i class="fa-solid fa-phone fa-5x contact_icon" style="color: #ffffff"></i></div>
+          <h2>Phone</h2>
+          <h2>+962 7 7620 2831</h2>
+        </section>
+      </section>
+    </section>
+    <footer class="text-center">
+      <figure>
+        <img src="./Images/logoFoter.png" alt="Logo FOOTER" />
+      </figure>
+      <p>© 2021 FIXY. All rights reserved.</p>
+    </footer>
+
+    <script>
+      const x = document.querySelector(".Burger-menu");
+      x.addEventListener("click", () => {
+        const menu = document.querySelector("#menu");
+        menu.classList.toggle("show-menu");
+      });
+    </script>
+  </body>
+</html>
