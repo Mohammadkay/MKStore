@@ -39,12 +39,12 @@ const SignIn = () => {
     return (
         <Center flex={1}>
             <Box safeArea p="2" py="8" w="90%" maxW="290">
-                <Heading size="xl" fontWeight="600" color="coolGray.800" _dark={{
+                <Heading size="xl" fontWeight="600" color="#BD9851" _dark={{
                     color: "warmGray.50"
                 }}>
                     Sign in to your account
                 </Heading>
-                <Heading mt="1" color="coolGray.600" _dark={{
+                <Heading mt="1" color="#BD9851" _dark={{
                     color: "warmGray.200"
                 }} fontWeight="medium" size="xs">
                     Login to access your Account

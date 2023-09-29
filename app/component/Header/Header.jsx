@@ -13,20 +13,13 @@ export default function Header() {
                 style={{ marginRight: 10 }}
                 onPress={() => navigation.navigate('User')}
             >
-                <Image
-                    source={require('../../assets/images/profile.png')}
-                    style={{ width: 50, height: 50 }}
-                />
+         
             </TouchableOpacity>
         ) : (
             <TouchableOpacity
                 style={{ marginRight: 10 }}
                 onPress={() => navigation.navigate('SignIn')}
             >
-                <Image
-                    source={require('../../assets/images/profile.png')}
-                    style={{ width: 50, height: 50 }}
-                />
             </TouchableOpacity>
         )
     );

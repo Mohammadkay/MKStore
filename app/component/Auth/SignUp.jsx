@@ -36,12 +36,12 @@ const SignUp = () => {
         <ScrollView>
         <Center flex={1} w="100%">
             <Box safeArea p="2" w="90%" maxW="290" py="8">
-                <Heading size="lg" color="coolGray.800" _dark={{
+                <Heading size="lg" color="#BD9851" _dark={{
                     color: "warmGray.50"
                 }} fontWeight="semibold">
                     Create An Account
                 </Heading>
-                <Heading mt="1" color="coolGray.600" _dark={{
+                <Heading mt="1" color="#BD9851" _dark={{
                     color: "warmGray.200"
                 }} fontWeight="medium" size="xs">
                     Sign up to get started shop

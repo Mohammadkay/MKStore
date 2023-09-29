@@ -51,7 +51,7 @@ module.exports.loginAdminCtrl = asyncHandler(async (req, res) => {
 
     const admin = await Admin.findOne({ email: req.body.email })
     if (!admin) {
-        return res.status(400).json({ message: "nvalid email or password" })
+        return res.status(400).json({ message: "invalid email or password" })
     }
 
     if (admin.isAdmin === true) {

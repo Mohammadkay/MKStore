@@ -22,7 +22,7 @@ import {
 } from '../index'
 import AuthLogin from '../Auth'
 import { AdminInfoContext } from '../../context/AdminInfoProvider'
-import AddProduct from '../Shops/Product/AddProduct';
+import AddProduct from '../Product/AddProduct';
 import AddCategory from '../Shops/Category/AddCategory';
 
 function Index() {

@@ -47,7 +47,6 @@ try{
             url: result.secure_url,
             publicId: result.public_id
         },
-        brand: req.body.brand,
         price: req.body.price,
         category: req.body.category,
     })
@@ -84,7 +83,7 @@ exports.editProduct = async (req, res) => {
             name: req.body.name,
             description: req.body.description,
             richDescription: req.body.richDescription || product.richDescription,
-            brand: req.body.brand || product.brand,
+        
             price: req.body.price || product.price,
             category: req.body.category,
         };

@@ -3,7 +3,7 @@ import { createStyles, Table, ScrollArea, UnstyledButton, Group, Text, Center, T
 import { keys } from '@mantine/utils'
 import { IconSelector, IconChevronDown, IconChevronUp, IconSearch } from '@tabler/icons-react'
 import axios from 'axios'
-import { AdminInfoContext } from '../../../context/AdminInfoProvider'
+import { AdminInfoContext } from '../../context/AdminInfoProvider'
 import Delete from './Delete'
 import CustomPagination from './CustomPagination'
 

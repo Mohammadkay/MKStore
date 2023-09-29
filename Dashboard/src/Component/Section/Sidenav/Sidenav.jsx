@@ -3,17 +3,17 @@ import { Link } from "react-router-dom";
 function Sidenav() {
     return (
         <>
-            <nav className="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+            <nav className="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion" style={{background:"#866c39"}}>
                 <div className="sb-sidenav-menu">
                     <div className="nav">
-                        <div className="sb-sidenav-menu-heading">control Board</div>
-                        <Link to='/' className="nav-link"><div className="sb-nav-link-icon"><i className="fas fa-tachometer-alt"></i></div> Dashboard</Link>
+                        <div className="sb-sidenav-menu-heading text-light">control Board</div>
+                        <Link to='/' className="nav-link text-light"><div className="sb-nav-link-icon text-light"><i className="fas fa-tachometer-alt"></i></div> Dashboard</Link>
                       
 
                         {/* <!-- Start Users tables  --> */}
-                        <a className="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseUsers"
+                        <a className="nav-link collapsed text-light" href="#" data-bs-toggle="collapse" data-bs-target="#collapseUsers"
                             aria-expanded="false" aria-controls="collapseUsers">
-                            <div className="sb-nav-link-icon"><svg className="svg-inline--fa fa-table" aria-hidden="true"
+                            <div className="sb-nav-link-icon text-light"><svg className="svg-inline--fa fa-table" aria-hidden="true"
                                 focusable="false" data-prefix="fas" data-icon="table" role="img"
                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
                                 <path fill="currentColor" d="M448 32C483.3 32 512 60.65 512
@@ -31,8 +31,8 @@ function Sidenav() {
                         <div className="collapse" id="collapseUsers" aria-labelledby="headingOne"
                             data-bs-parent="#sidenavAccordion">
                             <nav className="sb-sidenav-menu-nested nav">
-                                <Link to='/TableUsers' className="nav-link">Users</Link>
-                                <Link to='/TableAdmin' className="nav-link">Admin</Link>
+                                <Link to='/TableUsers' className="nav-link text-light">Users</Link>
+                                <Link to='/TableAdmin' className="nav-link text-light">Admin</Link>
                             </nav>
                         </div>
                         {/* <!-- End Users tables  --> */}
@@ -40,12 +40,12 @@ function Sidenav() {
 
 
 
-                        <div className="sb-sidenav-menu-heading">CONTROL
+                        <div className="sb-sidenav-menu-heading text-light">CONTROL
                             INTERFACES</div>
                         {/* <!-- Start tables Shops  --> */}
-                        <a className="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                        <a className="nav-link collapsed text-light" href="#" data-bs-toggle="collapse"
                             data-bs-target="#collapseShops" aria-expanded="false" aria-controls="collapseShops">
-                            <div className="sb-nav-link-icon"><svg className="svg-inline--fa fa-table" aria-hidden="true"
+                            <div className="sb-nav-link-icon"><svg className="svg-inline--fa fa-table text-light" aria-hidden="true"
                                 focusable="false" data-prefix="fas" data-icon="table" role="img"
                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
                                 <path fill="currentColor" d="M448 32C483.3 32 512 60.65 512
@@ -64,8 +64,8 @@ function Sidenav() {
                             data-bs-parent="#sidenavAccordion">
                             <nav className="sb-sidenav-menu-nested nav">
 
-                                <Link to='/Product' className="nav-link">Products list</Link>
-                                <Link to='/AddProduct' className="nav-link">Add Product</Link>
+                                <Link to='/AddProduct' className="nav-link text-light">Add Product</Link>
+                                <Link to='/Product' className="nav-link text-light">Products list</Link>
                               
                           
 
@@ -75,9 +75,9 @@ function Sidenav() {
 
                              
                         {/* <!-- Start tables Shops  --> */}
-                        <a className="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                        <a className="nav-link collapsed text-light text-light" href="#" data-bs-toggle="collapse"
                             data-bs-target="#collapseCategory" aria-expanded="false" aria-controls="collapseCategory">
-                            <div className="sb-nav-link-icon"><svg className="svg-inline--fa fa-table" aria-hidden="true"
+                            <div className="sb-nav-link-icon"><svg className="svg-inline--fa fa-table text-light text-light" aria-hidden="true"
                                 focusable="false" data-prefix="fas" data-icon="table" role="img"
                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
                                 <path fill="currentColor" d="M448 32C483.3 32 512 60.65 512
@@ -96,22 +96,22 @@ function Sidenav() {
                             data-bs-parent="#sidenavAccordion">
                             <nav className="sb-sidenav-menu-nested nav">
 
-                                            <Link to='/Category' className="nav-link">Category</Link>
-                                            <Link to='/AddCategory' className="nav-link">Add Category</Link>
+                                            <Link to='/AddCategory' className="nav-link text-light">Add Category</Link>
+                                            <Link to='/Category' className="nav-link text-light">Category</Link>
                                 
                             </nav>
                         </div>
                             {/*  */}
-                        <Link to='/CreateAccount' className="nav-link">
-                            <div className="sb-nav-link-icon">
-                                <i className="fas fa-chart-area"></i>
+                        <Link to='/CreateAccount' className="nav-link text-light">
+                            <div className="sb-nav-link-icon text-light">
+                                <i className="fas fa-chart-area "></i>
                             </div>
                             Create Account
                         </Link>
 
-                        <Link to='/resetPassword' className="nav-link">
-                            <div className="sb-nav-link-icon">
-                                <i className="fas fa-chart-area"></i>
+                        <Link to='/resetPassword' className="nav-link text-light">
+                            <div className="sb-nav-link-icon text-light">
+                                <i className="fas fa-chart-area "></i>
                             </div>
                             Reset Password
                         </Link>

@@ -29,7 +29,7 @@ import { default as Page404 } from './PageError/Page404'
 import { default as Page500 } from './PageError/Page500'
 
 ///////// Shops
-import { default as Product } from './Shops/Product/Product'
+import { default as Product } from './Product/Product'
 import { default as Category } from './Shops/Category/Category'
 export {
     Nav,

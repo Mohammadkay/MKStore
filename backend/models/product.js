@@ -16,10 +16,6 @@ const productSchema = mongoose.Schema({
             publicId: null
         }
     },
-     brand: {
-        type: String,
-        default: '',
-    },
     price: {
         type: String,
         default: 0,

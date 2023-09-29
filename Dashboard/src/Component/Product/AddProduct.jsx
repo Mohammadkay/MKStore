@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useContext, useEffect, useRef, useState } from 'react'
 import { Link,  useNavigate } from 'react-router-dom'
-import {AdminInfoContext} from '../../../context/AdminInfoProvider'
+import {AdminInfoContext} from '../../context/AdminInfoProvider'
 export default function AddProduct() {
     const [data,setData]=useState([])
     const [image,setImage]=useState(null)
@@ -9,7 +9,6 @@ export default function AddProduct() {
     const navigate = useNavigate();
 
     const name =useRef()
-    const brand =useRef()
     const price =useRef()
     const description =useRef()
     const CatId =useRef()
@@ -33,11 +32,10 @@ export default function AddProduct() {
         e.preventDefault();
         setError("");
       
-        if (name.current.value !== "" || brand.current.value !== "" || price.current.value !== "" || description.current.value !== "") {
+        if (name.current.value !== "" ||  price.current.value !== "" || description.current.value !== "") {
           // Create a FormData object
           const formData = new FormData();
           formData.append("name", name.current.value);
-          formData.append("brand", brand.current.value);
           formData.append("price", price.current.value);
           formData.append("description", description.current.value);
           formData.append("category", CatId.current.value);
@@ -81,17 +79,14 @@ export default function AddProduct() {
                          <label htmlFor="">Product Name</label>
                         <input type="text" className="form-control" placeholder="Product Name" ref={name}/>
                     </div>
-                    <div className="col pl-3">
-                          <label htmlFor="" >Brand</label>
-                <input type="text" className="form-control" placeholder="Brand" ref={brand}/>
+                    <div className="col">
+                         <label htmlFor="">Price</label>
+                        <input type="number" className="form-control" placeholder="Price" ref={price}/>
                     </div>
                 </div>
                 {/*  */}
                 <div className="row p-3">
-                        <div className="col">
-                         <label htmlFor="">Price</label>
-                        <input type="number" className="form-control" placeholder="Price" ref={price}/>
-                    </div>
+                      
                     <div className="col pl-3">
                           <label htmlFor="" className='col-12' >Category</label>
                           <select className="custom-select col-12 form-control" ref={CatId}>
@@ -104,13 +99,14 @@ export default function AddProduct() {
 
                 </select>
                     </div>
-                </div>
-                {/* 33th row */}
-                <div className="row p-3">
-                        <div className="col">
+                    <div className="col">
                          <label htmlFor="">Product Name</label>
                         <input type="file" className="form-control"  onChange={(e)=>setImage(e.target.files[0])}/>
                     </div>
+                </div>
+                {/* 33th row */}
+                <div className="row p-3">
+                   
                     <div className="col pl-3">
                           <label htmlFor="" >Description</label>
                 <textarea type="text" className="form-control" placeholder="Description" ref={description}></textarea>

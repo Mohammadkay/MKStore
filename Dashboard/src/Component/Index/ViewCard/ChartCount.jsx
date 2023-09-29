@@ -24,7 +24,7 @@ export default function ChartUser({ adminInfo }) {
     return (
         <>
             <div className="col-xl-3 col-md-6">
-                <div className="card bg-primary text-white mb-4">
+                <div className="card  text-white mb-4" style={{background:"#BD9851"}}>
                     <div className="card-body">
                         User  <span>Count : {countUser}</span>
                     </div>
@@ -65,7 +65,7 @@ export function ServiceProvider({ adminInfo }) {
     return (
         <>
             <div className="col-xl-3 col-md-6">
-                <div className="card bg-primary text-white mb-4">
+                <div className="card  text-white mb-4" style={{background:"#BD9851"}}>
                     <div className="card-body">
                         product  <span>Count : {caculateproduct(countServiceProvider)}</span>
                     </div>
