@@ -23,7 +23,7 @@ import {
 import AuthLogin from '../Auth'
 import { AdminInfoContext } from '../../context/AdminInfoProvider'
 import AddProduct from '../Product/AddProduct';
-import AddCategory from '../Shops/Category/AddCategory';
+import AddCategory from '../Category/AddCategory';
 
 function Index() {
     const { adminInfo, setAdminInfo } = useContext(AdminInfoContext)

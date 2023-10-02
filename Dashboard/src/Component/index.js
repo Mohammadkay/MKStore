@@ -30,7 +30,7 @@ import { default as Page500 } from './PageError/Page500'
 
 ///////// Shops
 import { default as Product } from './Product/Product'
-import { default as Category } from './Shops/Category/Category'
+import { default as Category } from './Category/Category'
 export {
     Nav,
     Sidenav,

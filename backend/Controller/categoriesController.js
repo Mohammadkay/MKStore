@@ -1,4 +1,5 @@
 const Category = require('../models/category');
+const Product=require("../models/product");
 const mongoose = require('mongoose');
 const fs = require('fs')
 const path = require('path')
@@ -24,28 +25,23 @@ exports.getCategory = async (req, res) => {
     res.status(200).send(category);
 };
 
-exports.deleteCategory = (req, res) => {
-    Category.findByIdAndRemove(req.params.id)
-        .then((category) => {
-            if (category) {
-                return res.status(200).json({
-                    success: true,
-                    message: 'the category is deleted!',
-                });
-            } else {
-                return res
-                    .status(404)
-                    .json({ success: false, message: 'category not found!' });
-            }
-        })
-        .catch((err) => {
-            return res.status(500).json({ success: false, error: err });
+exports.deleteCategory =async (req, res) => {
+    try{
+        
+        
+        await Product.deleteMany({ category: req.params.id });
+        await Category.findByIdAndRemove(req.params.id)
+        res.status(200).json({
+            success: true,
+            message: 'the category is deleted!',
         });
+    }catch(error){
+        res.status(400).json({success:false,message:error.message})
+    }
 };
 
 exports.addCategory = async (req, res) => {
-    console.log(req.body)
-
+   
     try{
         const imagePath = path.join(__dirname, `../images/${req.file.filename}`)
         const result = await cloudinaryUploadImage(imagePath)
@@ -58,8 +54,6 @@ exports.addCategory = async (req, res) => {
                 publicId: result.public_id
             },
         })
-        console.log(req.body)
-        console.log(cat)
         await Category.create(cat)
       fs.unlinkSync(imagePath)
         res.status(201).json({ message: 'Post added successfully' })

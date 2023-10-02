@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useContext,  useRef, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
-import { AdminInfoContext } from '../../../context/AdminInfoProvider';
+import { AdminInfoContext } from '../../context/AdminInfoProvider';
 
 export default function AddCategory() {
     const [data,setData]=useState([])

@@ -1,6 +1,8 @@
 import React, { useState, useContext } from 'react'
 import axios from 'axios'
 import { AdminInfoContext } from '../context/AdminInfoProvider'
+import logoImage from '../assets/logoFoter.png';
+
 
 function AuthLogin() {
     const [email, setEmail] = useState('')
@@ -48,12 +50,15 @@ function AuthLogin() {
 
     return (
         <>
-            <div id="layoutAuthentication" className="bg-primary">
+            <div id="layoutAuthentication" className="" style={{background:"#fff8eb"}}>
                 <div id="layoutAuthentication_content">
                     <main>
                         <div className="container">
                             <div className="row justify-content-center">
                                 <div className="col-lg-5">
+                                    <div className='text-center'>
+                                    <img src={logoImage} alt="Logo"  style={{width:"70px"}}/>
+                                    </div>
                                     <div className="card shadow-lg border-0 rounded-lg mt-5">
                                         <div className="card-header"><h3 className="text-center font-weight-light my-4">Login</h3></div>
                                         <div className="card-body">

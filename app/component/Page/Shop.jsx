@@ -14,7 +14,7 @@ export default function Shop() {
             try{
                 const response=await axios.get('http://10.0.2.2:8000/api/categories');
                 setCategory(response.data)
-                console.log(response.data)
+                
             }
             catch(err){
                 console.log(err)
